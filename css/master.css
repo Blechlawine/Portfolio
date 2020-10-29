@@ -12,6 +12,7 @@ h1, h2, h3 {
 
 p {
     font-size: 10px;
+    transition: color 200ms;
 }
 
 #author {
@@ -24,6 +25,5 @@ p {
 }
 
 p:hover {
-    color: rgba();
-    transition: color 200ms;
+    color: white;
 }
