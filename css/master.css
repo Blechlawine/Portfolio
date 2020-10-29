@@ -1,0 +1,29 @@
+* {
+    font-family: Arial;
+}
+
+body {
+    background-color:
+}
+
+h1, h2, h3 {
+    color: red;
+}
+
+p {
+    font-size: 10px;
+}
+
+#author {
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.author {
+    border: 2px solid brown;
+}
+
+p:hover {
+    color: rgba();
+    transition: color 200ms;
+}
