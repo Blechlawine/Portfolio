@@ -9,3 +9,5 @@ $("#korbi").click(() => {
 $("#marc").click(() => {
     window.location.href = "marc/projects.html";
 });
+
+$("nav").load("../partials/menu.html");
