@@ -1,12 +1,10 @@
 # TODO:
 
-- nachladen von Menü und footer
-- menu.html stylen
+- nachladen von footer
 - footer stylen
-- projects.html stylen
 - project.html stylen
 - about me Page anlegen
 - about me verlinken
 - Portraits machen
-- 
+-
 - Content einfügen
