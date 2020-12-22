@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <link rel="project" type="text/css" href="css/project.css">
-    <link rel="stylesheet" href="text/css" href="css/text.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/text.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,17 +10,70 @@
 </head>
     <body>
         <nav>
+            <!-- Wird mit Javascript nachgeladen -->
         </nav>
-
         <div class="filterMenu">
+            <div class="filterButton">
+                <div class="filterButtonTooltip">
+                    <p>Fotografie</p>
+                </div>
+                <img class="filterButtonImage" src="../img/arrow_back-white-24dp.svg" alt="img desc">
+            </div>
+            <div class="filterButton">
+                <div class="filterButtonTooltip">
+                    <p>Illustrationen</p>
+                </div>
+                <img class="filterButtonImage" src="../img/arrow_back-white-24dp.svg" alt="img desc">
+            </div>
+            <div class="filterButton">
+                <div class="filterButtonTooltip">
+                    <p>Film</p>
+                </div>
+                <img class="filterButtonImage" src="../img/arrow_back-white-24dp.svg" alt="img desc">
+            </div>
+            <div class="filterButton">
+                <div class="filterButtonTooltip">
+                    <p>3D Modelling</p>
+                </div>
+                <img class="filterButtonImage" src="../img/arrow_back-white-24dp.svg" alt="img desc">
+            </div>
+            <div class="filterButton">
+                <div class="filterButtonTooltip">
+                    <p>Programmieren</p>
+                </div>
+                <img class="filterButtonImage" src="../img/arrow_back-white-24dp.svg" alt="img desc">
+            </div>
         </div>
 
-        <div id="projectCategory">
-            <div class="projectBox">
-                <div class="projectName">
-                    <h1>Projekt Name</h1>
+        <div class="projectCategory">
+            <p>
+                Fotografie
+            </p>
+            <div class="projectsGrid">
+                <div class="projectBox">
+                    <div class="projectName">
+                        <h2>Projekt 1</h2>
+                    </div>
+                    <img class="projectImage" src="./project1/cat.jpeg" alt="img desc">
+                </div>
+                <div class="projectBox">
+                    <div class="projectName">
+                        <h2>Projekt 2</h2>
+                    </div>
+                </div>
+                <div class="projectBox">
+                    <div class="projectName">
+                        <h2>Projekt 3</h2>
+                    </div>
+                </div>
+                <div class="projectBox">
+                    <div class="projectName">
+                    <h2>Projekt 4</h2>
+                    </div>
                 </div>
             </div>
+        </div>
+
         </div>
     </body>
 </html>

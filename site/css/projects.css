@@ -1,0 +1,81 @@
+:root {
+    --black50: rgba(0, 0, 0, 0.5);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.filterMenu {
+position:absolute;
+margin-left: 2%;
+margin-top: 250px;
+width: 50px;
+border-radius: 25px;
+border: 5px solid
+
+}
+
+.filterButton {
+    width: 50px;
+    height: 50px;
+}
+
+.filterButton:hover .filterButtonTooltip {
+    border-radius: 25px;
+    background-color: rgba(211, 211, 211, 0.2);
+    opacity: 1;
+    white-space: nowrap;
+}
+
+.filterButtonTooltip {
+    position:absolute;
+    padding-right:20%;
+    padding-left:20%;
+    margin-left: 60px;
+    opacity: 0;
+}
+
+.filterButtonImage {
+    position:relative;
+    width:40px;
+    height:40px;
+    display: block;
+    margin: 0 auto;;
+    border: 1px solid
+}
+
+.projectCategory {
+padding-left: 10%;
+}
+
+.projectImage{
+    width: 300px;
+    height: 300px;
+}
+
+.projectsGrid{
+      display: grid;
+      grid-gap: 15px;
+      grid-template-columns: 300px 300px 300px 300px;
+      grid-template-rows: 300px;
+}
+
+.projectBox {
+    background-color: grey;
+}
+
+.projectBox:hover .projectName {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.projectName {
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+}
