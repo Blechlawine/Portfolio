@@ -3,13 +3,18 @@
 
 
 /* Variablen */
+
 :root {
     --text-color: white;
+    --black50: rgba(0, 0, 0, 0.5);
 }
+
+/* Text */
 
 * {
     font-family: "Poppins", sans-serif;
     color: var(--text-color);
+    box-sizing: border-box;
 }
 
 h1 {
@@ -18,4 +23,10 @@ h1 {
 
 p {
     font-family: "Roboto", sans-serif;
+}
+
+/* Sonstiges */
+
+body {
+    background-color: black;
 }
