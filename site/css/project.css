@@ -27,11 +27,74 @@
     z-index: 1;
     background-color: var(--black50);
     border-radius: 12px;
-    padding: 36px;
-    padding-top: 24px;
+    padding: 24px 36px;
     text-align: center;
 }
 
 #projectTitle {
     margin: 0;
+}
+
+/* Slideshow Punkte */
+#slideshowMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+#slideshowScroll {
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 18px;
+    opacity: 0.5;
+}
+
+.slideShowCircle {
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.slideShowControl {
+    height: 24px;
+}
+
+/* Nächstes und Vorheriges Projekt */
+.projectNavigation {
+    margin-top: -72px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projectNavigationButton {
+    background-color: var(--black50);
+    padding: 12px 24px;
+    border-radius: 24px;
+    /* padding-left: 16px; */
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+#projectLeft {
+    margin-left: -8px;
+}
+
+#projectRight {
+    margin-right: -8px;
+}
+
+.projectNavigationLink {
+    text-decoration: none;
 }

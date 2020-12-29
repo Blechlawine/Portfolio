@@ -6,5 +6,6 @@
 - about me Page anlegen
 - about me verlinken
 - Portraits machen
+- Javascript für Slideshow
 -
 - Content einfügen
