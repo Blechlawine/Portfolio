@@ -16,7 +16,7 @@ let offset = 100;
 
 function setActiveImage(imageIndex) {
     currentImageIndex = imageIndex;
-    let images = document.getElementsByClassName("projectBackgroundImage");
+    // let images = document.getElementsByClassName("projectBackgroundImage");
     $(".projectBackgroundImage").css("transform", "translateX(" + -(offset * currentImageIndex) + "%)");
     // for (let x = 0; x < images.length; x++) {
     //     $(images[x]).css("transform", "translateX(" + -(offset * currentImageIndex) + "%)");
