@@ -1,3 +1,5 @@
+$("nav").load(partialsPath + "menu.html");
+
 // läd die Labels im menü, sobald die Seite geladen hat
 $(window).on("load", () => {
     setTimeout(() => {
