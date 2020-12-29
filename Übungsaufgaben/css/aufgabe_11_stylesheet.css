@@ -1,0 +1,31 @@
+*{
+    font-family: Arial;
+    background-color: #ffdc71;
+}
+
+h1{
+    font-size: 2rem;
+    color: blue;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+.strandBeschreibung{
+    font-size: 1rem;
+}
+
+.strandBeschreibung:hover{
+    color:white;
+}
+
+#author{
+    padding-left: 20px;
+}
+
+img:hover{
+    transition: all 50ms ease;
+    width: 15%;
+    height: auto;
+}
