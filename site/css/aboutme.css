@@ -24,13 +24,15 @@
 }
 
 #textBox {
-    width: 700px;
-    height:320px;
+    max-width: 700px;
+    font-size: 24px;
+    margin-bottom: 70px;
 }
 
 #contactInformation {
     display: flex;
     flex-direction: row;
+    flex-flow: wrap;
     grid-gap: 60px; /* WOW, funktioniert auch mit flexbox 😮*/
 }
 
@@ -39,4 +41,13 @@
     width: 48px;
     cursor: pointer;
 
+}
+
+@media (max-width: 1320px) {
+    #rightSide {
+        order: 1;
+    }
+    #leftSide {
+        order: 2;
+    }
 }
