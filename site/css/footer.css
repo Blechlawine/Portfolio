@@ -1,5 +1,6 @@
 #social-project-nav {
     justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
@@ -23,7 +24,7 @@
     flex-direction: row;
     align-items: center;
     grid-gap: 10px;
-
+    cursor: pointer;
 }
 
 .socialMediaButtons {
@@ -71,6 +72,7 @@
 
 #copyright {
     justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
