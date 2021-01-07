@@ -1,0 +1,78 @@
+#social-project-nav {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    grid-gap: 40px;
+    margin-top: 20px;
+}
+
+#breakline {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-bottom: 4px solid white;
+}
+
+.projectNavigationButton{
+    background-color: var(--black50);
+    padding: 12px 24px;
+    border-radius: 24px;
+    /* padding-left: 16px; */
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-gap: 10px;
+
+}
+
+.socialMediaButtons {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    grid-gap: 60px; /* WOW, funktioniert auch mit flexbox 😮*/
+}
+
+.socialMediaButton {
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+}
+
+#split{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    grid-gap: 300px;
+
+}
+
+#rightSide{
+    text-align: right;
+}
+#leftSide{
+    text-align:left;
+}
+
+.projectNavigationLink {
+    text-decoration: none;
+}
+
+.siteLink {
+    text-decoration: none;
+    line-height: 35px;
+}
+
+#logo{
+    height:80px;
+    width:80px;
+}
+
+#copyright {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    grid-gap: 40px;
+}
