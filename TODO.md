@@ -1,11 +1,6 @@
 # TODO:
 
-- nachladen von footer
-- footer stylen
-- project.html stylen
-- about me Page anlegen
-- about me verlinken
-- Portraits machen
-- Javascript für Slideshow
--
-- Content einfügen
+- project.html stylen (Korbinian)
+- Seiten duplizieren (Alex)
+- filter Funktionalität (Marc)
+- favicon machen

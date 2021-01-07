@@ -16,8 +16,8 @@ let offset = 100;
 
 function setActiveImage(imageIndex) {
     currentImageIndex = imageIndex;
-    // let images = document.getElementsByClassName("projectBackgroundImage");
     $(".projectBackgroundImage").css("transform", "translateX(" + -(offset * currentImageIndex) + "%)");
+    // let images = document.getElementsByClassName("projectBackgroundImage");
     // for (let x = 0; x < images.length; x++) {
     //     $(images[x]).css("transform", "translateX(" + -(offset * currentImageIndex) + "%)");
     // }
@@ -46,10 +46,3 @@ $("#slideshowRightArrow").click(() => {
 $("#slideshowLeftArrow").click(() => {
     prevImage();
 });
-
-
-// let currentImageIndex = 0;
-// for (let currentImage in backgroundImages) {
-//     $(".backgroundImages").addClass("moveLeft");
-//     currentImageIndex++;
-// }
