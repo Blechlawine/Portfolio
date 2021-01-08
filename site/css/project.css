@@ -96,6 +96,82 @@
     grid-gap: 10px;
 }
 
+.projectInfoPicture {
+    width: 100%;
+}
+
+.infoBlock1 {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-column-gap: 18%;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+    "header     header"
+    "pic         text";
+}
+.infoBlock2 {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-column-gap: 18%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+    "header     header"
+    "text         pic";
+}
+
+.subheading{
+    grid-area: header;
+    text-align: center;
+    margin-top: 50px;
+}
+.infoPic {
+    position: relative;
+    grid-area: pic;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.galleryPic {
+    position: relative;
+    width: 100%;
+}
+.intoText {
+    grid-area: text;
+    justify-content: center;
+}
+
+.picName {
+    position: absolute;
+    background-color: var(--black50);
+    width: 100%;
+    height: 72px;
+    top: 0;
+    opacity: 0;
+    text-align: center;
+    pointer-events: none;
+    transition: all 200ms;
+}
+
+.infoPic:hover .picName {
+    opacity: 1;
+}
+.galleryPic:hover .picName {
+    opacity: 1;
+}
+
+#gallery {
+    display: grid;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
 #projectLeft {
     margin-left: -8px;
 }
