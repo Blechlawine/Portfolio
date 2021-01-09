@@ -57,15 +57,26 @@
     align-items: center;
     justify-content: center;
     grid-gap: 18px;
-    opacity: 0.5;
+    overflow-x: hidden;
 }
 
 .slideShowCircle {
+    opacity: 0.5;
     height: 8px;
     width: 8px;
     background-color: white;
     padding: 4px;
     border-radius: 50%;
+    transition: all 200ms;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.activeCircle {
+    height: 14px;
+    width: 14px;
+    padding: 7px;
+    opacity: 1;
 }
 
 .slideShowControl {
