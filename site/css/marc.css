@@ -1,0 +1,5 @@
+/* Dieses Stylesheet ist nur für Marc spezifische Styles */
+
+#filterHighlight {
+    background-color: var(--marcAccent);
+}

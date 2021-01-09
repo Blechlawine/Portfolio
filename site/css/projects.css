@@ -26,6 +26,13 @@
     cursor: pointer;
 }
 
+#filterHighlight {
+    position: absolute;
+    padding: 18px;
+    border-radius: 50%;
+    /* Die Backgroundcolor steht im jeweiligen Personen Stylesheet */
+    margin-top: -6px;
+}
 
 .filterButtonTooltip {
     background-color: var(--black50);
