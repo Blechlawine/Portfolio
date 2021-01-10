@@ -15,9 +15,11 @@ let currentImageIndex = 0;
 let offset = 100;
 let circleOffsetPx = 18 + 8;
 let initialCircleOffset = null;
+let maxImageIndex = null;
 
 $(window).on("load", () => {
     setTimeout(() => {
+        maxImageIndex = $(".projectBackgroundImage").length - 1;
         let circleAmount = $(".slideShowCircle").length;
         initialCircleOffset = (circleAmount / 2) * circleOffsetPx - (circleOffsetPx + 3) / 2; // +3 deshalb, weil der aktive Kreis einen 3px größeren radius hat
         $(".slideShowCircle").css("transform", "translateX(" + (initialCircleOffset) + "px)");
