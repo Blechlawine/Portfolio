@@ -1,66 +1,66 @@
 #logo {
-    position: absolute;
-    z-index: 1;
-    margin-left: 35px;
-    margin-top: 9px;
-    pointer-events: none;
+    position:            absolute;
+    z-index:             1;
+    margin-left:         35px;
+    margin-top:          9px;
+    pointer-events:      none;
 }
 
 body {
-    padding: 0;
-    overflow: hidden;
+    padding:             0;
+    overflow:            hidden;
 }
 
 h1 {
-    font-size: 60px;
-    font-weight: 500;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    font-size:           60px;
+    font-weight:         500;
+    margin-top:          12px;
+    margin-bottom:       12px;
 }
 
 .dudes {
-    display: flex;
-    flex-direction: row;
+    display:             flex;
+    flex-direction:      row;
 }
 
 .dude {
-    width: calc(100vw / 3);
-    padding: 0;
-    height: 100vh;
+    width:               calc(100vw / 3);
+    padding:             0;
+    height:              100vh;
     background-position: center;
-    filter: saturate(0);
-    cursor: pointer;
+    filter:              saturate(0);
+    cursor:              pointer;
 
-    transition: filter 200ms;
+    transition:          filter 200ms;
 }
 
 .dude:hover {
-    filter: saturate();
+    filter:              saturate();
 }
 
 #alex {
-    background-image: url("../img/platzhalter1.jpg");
+    background-image:    url("../img/platzhalter1.jpg");
 }
 
 #korbi {
-    background-image: url("../img/platzhalter2.jpg");
+    background-image:    url("../img/platzhalter2.jpg");
 }
 
 #marc {
-    background-image: url("../img/platzhalter3.jpg");
+    background-image:    url("../img/platzhalter3.jpg");
 }
 
 .backgroundBox {
-    text-align: center;
-    padding: 0 37px 200px 37px;
-    background-color: var(--black50);
-    position: absolute;
-    width: calc(100vw / 3);
-    top: 100vh;
-    transform: translateY(-105px);
-    transition: transform 200ms;
+    text-align:          center;
+    padding:             0 37px 200px 37px;
+    background-color:    var(--black50);
+    position:            absolute;
+    width:               calc(100vw / 3);
+    top:                 100vh;
+    transform:           translateY(-105px);
+    transition:          transform 200ms;
 }
 
 .backgroundBox:hover {
-    transform: translateY(-240px);
+    transform:           translateY(-240px);
 }

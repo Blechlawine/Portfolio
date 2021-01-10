@@ -1,95 +1,95 @@
 #social-project-nav {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    grid-gap: 40px;
-    margin-top: 50px;
+    justify-content:  center;
+    align-items:      center;
+    display:          flex;
+    flex-direction:   row;
+    flex-flow:        wrap;
+    grid-gap:         40px;
+    margin-top:       50px;
 }
 
 #breakline {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border-bottom: 4px solid white;
+    margin-top:       40px;
+    margin-bottom:    40px;
+    border-bottom:    4px solid white;
 }
 
 .bigArrow {
-    margin-top: 100px;
+    margin-top:       100px;
 
     /* Zentriert den großen Pfeil auf der Seite horizontal */
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    display:          flex;
+    justify-content:  center;
+    align-items:      flex-end;
 
-    width: 100%;
-    height: 58px;
+    width:            100%;
+    height:           58px;
     /* margin-left: 50%;
     margin-right: 50%; */
-    cursor: pointer;
+    cursor:           pointer;
 }
 
 .projectNavigationButton{
     background-color: var(--black50);
-    padding: 12px 24px;
-    border-radius: 24px;
+    padding:          12px 24px;
+    border-radius:    24px;
     /* padding-left: 16px; */
-    height: 48px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    grid-gap: 10px;
-    cursor: pointer;
+    height:           48px;
+    display:          flex;
+    flex-direction:   row;
+    align-items:      center;
+    grid-gap:         10px;
+    cursor:           pointer;
 }
 
 .socialMediaButtons {
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    grid-gap: 60px; /* WOW, funktioniert auch mit flexbox 😮*/
+    display:          flex;
+    flex-direction:   row;
+    flex-flow:        wrap;
+    grid-gap:         60px; /* WOW, funktioniert auch mit flexbox 😮*/
 }
 
 .socialMediaButton {
-    height: 48px;
-    width: 48px;
-    cursor: pointer;
+    height:           48px;
+    width:            48px;
+    cursor:           pointer;
 }
 
 #split{
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    grid-gap: 300px;
+    justify-content:  center;
+    display:          flex;
+    flex-direction:   row;
+    flex-flow:        wrap;
+    grid-gap:         300px;
 
 }
 
 #rightSide{
-    text-align: right;
+    text-align:       right;
 }
 #leftSide{
-    text-align:left;
+    text-align:       left;
 }
 
 .projectNavigationLink {
-    text-decoration: none;
+    text-decoration:  none;
 }
 
 .siteLink {
-    text-decoration: none;
-    line-height: 35px;
+    text-decoration:  none;
+    line-height:      35px;
 }
 
 #logo{
-    height:80px;
-    width:80px;
+    height:           80px;
+    width:            80px;
 }
 
 #copyright {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    grid-gap: 40px;
+    justify-content:  center;
+    align-items:      center;
+    display:          flex;
+    flex-direction:   row;
+    flex-flow:        wrap;
+    grid-gap:         40px;
 }
