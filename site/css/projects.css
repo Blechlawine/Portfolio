@@ -32,6 +32,7 @@
     border-radius: 50%;
     /* Die Backgroundcolor steht im jeweiligen Personen Stylesheet */
     margin-top: -6px;
+
     transition: margin 200ms;
 }
 
