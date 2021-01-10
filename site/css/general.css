@@ -10,6 +10,9 @@ html {
 :root {
     --text-color: white;
     --black50: rgba(0, 0, 0, 0.5);
+    --alexAccent: #E16666;
+    --korbiAccent: #5585E2;
+    --marcAccent: #3DB22A;
 }
 
 /* Text */

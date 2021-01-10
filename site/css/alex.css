@@ -1,0 +1,5 @@
+/* Dieses Stylesheet ist nur für Alex spezifische Styles */
+
+#filterHighlight {
+    background-color: var(--alexAccent);
+}
