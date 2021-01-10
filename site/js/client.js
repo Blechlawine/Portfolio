@@ -25,10 +25,8 @@ $(window).on("load", () => {
         $(".slideShowCircle").css("transform", "translateX(" + (initialCircleOffset) + "px)"); // verschiebt die Kreise um das in der vorherigen Zeile berechnete offset, sodass der aktive Kreis mittig zwischen den 2 Pfeilen liegt
         $(".slideShowCircle").eq(currentImageIndex).addClass("activeCircle"); // fügt die Klasse "activeCircle" zum aktiven Kreis hinzu, sodass dieser hervorgehoben wird
 
-        $(".slideShowCircle").each(function(i) { //arrowfunction funktioniert hier grund nicht, damit "this" auf den angeklickten Kreis zeigt
-            $(this).click(() => {
-                setActiveImage(i);
-            });
+        $(".slideShowCircle").each(function(i) { // arrowfunction funktioniert hier nicht, damit "this" auf den angeklickten Kreis zeigt
+            $(this).click(() => setActiveImage(i));
         });
     }, 100);
 });
