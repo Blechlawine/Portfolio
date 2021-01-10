@@ -36,6 +36,10 @@ p {
     font-family:      "Roboto", sans-serif;
 }
 
+label {
+    cursor:           inherit;
+}
+
 /* Sonstiges */
 
 body {
