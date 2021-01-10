@@ -5,13 +5,28 @@
     flex-direction: row;
     flex-flow: wrap;
     grid-gap: 40px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 #breakline {
     margin-top: 40px;
     margin-bottom: 40px;
     border-bottom: 4px solid white;
+}
+
+.bigArrow {
+    margin-top: 100px;
+
+    /* Zentriert den großen Pfeil auf der Seite horizontal */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    width: 100%;
+    height: 58px;
+    /* margin-left: 50%;
+    margin-right: 50%; */
+    cursor: pointer;
 }
 
 .projectNavigationButton{
