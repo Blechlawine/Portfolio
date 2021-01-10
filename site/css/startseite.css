@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-    font-size:           60px;
+    font-size:           3vw;
     font-weight:         500;
     margin-top:          12px;
     margin-bottom:       12px;
@@ -52,15 +52,16 @@ h1 {
 
 .backgroundBox {
     text-align:          center;
-    padding:             0 37px 200px 37px;
+    padding:             0 37px 10px 37px;
     background-color:    var(--black50);
     position:            absolute;
     width:               calc(100vw / 3);
     top:                 100vh;
+    /* 105px sind die Höhe des immer sichtbaren Teils der backgroundBox, der Teil mit dem Namen der Person drin */
     transform:           translateY(-105px);
     transition:          transform 200ms;
 }
 
 .backgroundBox:hover {
-    transform:           translateY(-240px);
+    transform:           translateY(-100%);
 }
