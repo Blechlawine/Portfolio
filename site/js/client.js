@@ -11,21 +11,21 @@ $("#marc").click(() => {
 });
 
 // Slideshow
-let currentImageIndex = 0;
-let offset = 100;
-let circleOffsetPx = 18 + 8;
+let currentImageIndex = 0; // Index des aktiven Bildes beim Laden der Seite
+let offset = 100; // Offset in %, um die die Bilder in der Slideshow verschoben werden, wenn man durchklickt
+let circleOffsetPx = 18 + 8; // Abstand von der Mitte eines kleinen Kreises zur Mitte des nächsten kleinen Kreises
 let initialCircleOffset = null;
 let maxImageIndex = null;
 
 $(window).on("load", () => {
     setTimeout(() => {
-        maxImageIndex = $(".projectBackgroundImage").length - 1;
-        let circleAmount = $(".slideShowCircle").length;
-        initialCircleOffset = (circleAmount / 2) * circleOffsetPx - (circleOffsetPx + 3) / 2; // +3 deshalb, weil der aktive Kreis einen 3px größeren radius hat
-        $(".slideShowCircle").css("transform", "translateX(" + (initialCircleOffset) + "px)");
-        $(".slideShowCircle").eq(currentImageIndex).addClass("activeCircle");
+        maxImageIndex = $(".projectBackgroundImage").length - 1; // der Index des letzten Bildes in der Slideshow
+        let circleAmount = $(".slideShowCircle").length; // Anzahl Kreise in Slideshowcontrol
+        initialCircleOffset = (circleAmount / 2) * circleOffsetPx - (circleOffsetPx + 3) / 2; // Die Kreise sollten beim Laden der Seite nach rechts verschoben werden, damit der aktive Kreis(der beim laden der Seite immer der erste ist) mittig zwischen den 2 Pfeilen liegt. +3 deshalb, weil der aktive Kreis einen 3px größeren radius hat
+        $(".slideShowCircle").css("transform", "translateX(" + (initialCircleOffset) + "px)"); // verschiebt die Kreise um das in der vorherigen Zeile berechnete offset, sodass der aktive Kreis mittig zwischen den 2 Pfeilen liegt
+        $(".slideShowCircle").eq(currentImageIndex).addClass("activeCircle"); // fügt die Klasse "activeCircle" zum aktiven Kreis hinzu, sodass dieser hervorgehoben wird
 
-        $(".slideShowCircle").each(function(i) { //arrowfunction funktioniert hier aus irgendeinem grund nicht
+        $(".slideShowCircle").each(function(i) { //arrowfunction funktioniert hier grund nicht, damit "this" auf den angeklickten Kreis zeigt
             $(this).click(() => {
                 setActiveImage(i);
             });
@@ -34,15 +34,13 @@ $(window).on("load", () => {
 });
 
 function setActiveImage(imageIndex) {
+    // verschiebt die Kreise um das passende Offset, sodass der aktive Kreis mittig zwischen den 2 Pfeilen liegt und gibt dem aktiven Kreis die Klasse "activeCircle"
+
     $(".slideShowCircle").eq(currentImageIndex).removeClass("activeCircle");
     currentImageIndex = imageIndex;
     $(".projectBackgroundImage").css("transform", "translateX(" + -(offset * currentImageIndex) + "%)");
     $(".slideShowCircle").css("transform", "translateX(" + (initialCircleOffset - (circleOffsetPx * currentImageIndex)) + "px)");
     $(".slideShowCircle").eq(currentImageIndex).addClass("activeCircle");
-    // let images = document.getElementsByClassName("projectBackgroundImage");
-    // for (let x = 0; x < images.length; x++) {
-    //     $(images[x]).css("transform", "translateX(" + -(offset * currentImageIndex) + "%)");
-    // }
 }
 
 function nextImage() {

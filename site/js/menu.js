@@ -1,6 +1,7 @@
+// lädt das menü nach, damit wir den Menü code nicht 100 mal schreiben müssen, falls man die Seite irgendwann hostet, sollte das mittels Serverside rendering gemacht werden 
 $("nav").load(partialsPath + "menu.html");
 
-// läd die Labels im menü, sobald die Seite geladen hat
+// lädt die Labels und Icons im menü, sobald die Seite geladen hat
 $(window).on("load", () => {
     setTimeout(() => {
         $("#siteName").text(siteName);
