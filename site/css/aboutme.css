@@ -1,53 +1,57 @@
-#flexContent{
-    position:absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-flow: wrap;
-    grid-gap: 100px; /* WOW, funktioniert auch mit flexbox 😮*/
-    padding-top: 130px;
-    padding-left: 120px;
+#flexContent {
+    display:             flex;
+    flex-direction:      row;
+    align-items:         center;
+    justify-content:     center;
+    flex-flow:           wrap;
+    grid-gap:            100px; /* WOW, funktioniert auch mit flexbox 😮*/
+    padding-top:         25vh;
+    padding-left:        5vw;
+    padding-right:       5vw;
 }
 
-#rightSide{
-    height:400px;
-    width:400px;
+#rightSide {
+    height:              25vw;
+    width:               25vw;
 }
 
 #aboutMeImage {
-    height:100%;
-    width: 100%;
-    object-fit: cover;
-    clip-path: circle(200px);
+    height:              100%;
+    width:               100%;
+    object-fit:          cover;
+    clip-path:           circle(50%);
 }
 
 #textBox {
-    max-width: 700px;
-    font-size: 24px;
-    margin-bottom: 70px;
+    max-width:           700px;
+    font-size:           24px;
+    margin-bottom:       70px;
 }
 
 #contactInformation {
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    grid-gap: 60px; /* WOW, funktioniert auch mit flexbox 😮*/
+    display:             flex;
+    flex-direction:      row;
+    flex-flow:           wrap;
+    grid-gap:            60px; /* WOW, funktioniert auch mit flexbox 😮*/
+}
+
+h1 {
+    font-size: 48px;
 }
 
 .contactIcon {
-    height: 48px;
-    width: 48px;
-    cursor: pointer;
-
+    height:              48px;
+    width:               48px;
+    cursor:              pointer;
 }
 
-@media (max-width: 1320px) {
+@media (max-width:       1440px) {
     #rightSide {
-        order: 1;
+        order:           1;
+        width:           50vw;
+        height:          50vw;
     }
     #leftSide {
-        order: 2;
+        order:           2;
     }
 }
