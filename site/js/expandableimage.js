@@ -1,13 +1,3 @@
-function expand(i) {
-    var preview = document.getElementById(i);
-    var modal = document.getElementById('modal');
-    var caption = document.getElementById('caption');
-
-    $('#modal-content').attr("src", preview.src);
-    modal.style.display = "block";
-    caption.innerHTML = preview.alt;
-}
-
 $("img.preview").click(function() {
     let previewDesc = $(this).attr("alt");
     let previewSrc = $(this).attr("src");
@@ -16,8 +6,6 @@ $("img.preview").click(function() {
     $("#caption").text(previewDesc);
 });
 
-document.getElementById('close').addEventListener("click", close);
-
-function close() {
+$("#close").click(() => {
     $("#modal").css("display", "none");
-}
+});
