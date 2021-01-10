@@ -2,7 +2,7 @@ const highlightOffset = 24 + 24;
 
 function moveHighlight(elementToHighlightID) {
     let clickedPosition = $("#" + elementToHighlightID).position().top;
-    let calculatedHighlightPosition = clickedPosition - 8 - 6;
+    let calculatedHighlightPosition = clickedPosition - 8 - 8;
     $("#filterHighlight").css("margin-top", calculatedHighlightPosition + "px");
 }
 

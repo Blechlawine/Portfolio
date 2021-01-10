@@ -28,10 +28,10 @@
 
 #filterHighlight {
     position:         absolute;
-    padding:          18px;
+    padding:          20px;
     border-radius:    50%;
     /* Die Backgroundcolor steht im jeweiligen Personen Stylesheet */
-    margin-top:       -6px;
+    margin-top:       -8px;
 
     transition:       margin 200ms;
 }
