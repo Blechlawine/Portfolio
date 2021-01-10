@@ -1,6 +1,4 @@
 # TODO:
 
-- project.html stylen (Korbinian)
-- Seiten duplizieren (Alex)
-- filter Funktionalität (Marc)
+- Seiten duplizieren (Alex, alle)
 - favicon machen
