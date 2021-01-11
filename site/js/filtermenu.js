@@ -10,7 +10,6 @@ $(".filterButton").click(function() { //arrowfunction funktioniert hier nicht, w
     let placeToJumpTo = this.id.replace("FilterButton", "Category"); //Die ID der Kategorie, die zum angeklickten Filterbutton gehört
     let scrollToPos = $("#" + placeToJumpTo).offset().top;
     window.scrollTo(0, scrollToPos);
-    moveHighlight(this.id);
 });
 
 $(window).scroll(() => {
