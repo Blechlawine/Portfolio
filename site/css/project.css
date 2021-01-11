@@ -13,7 +13,7 @@
     height:                     100%;
     flex-shrink:                0;
     object-fit:                 cover;
-    transition:                 transform 2s;
+    transition:                 transform 700ms;
 }
 
 /* positioniert die projectCard mittig über dem Hintergrundbild */
@@ -67,7 +67,7 @@
     background-color:           white;
     padding:                    4px;
     border-radius:              50%;
-    transition:                 all 200ms;
+    transition:                 transform 700ms, width 200ms, height 200ms, padding 200ms;
     cursor:                     pointer;
     pointer-events:             auto;
 }
