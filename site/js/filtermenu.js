@@ -8,7 +8,8 @@ function moveHighlight(elementToHighlightID) {
 
 $(".filterButton").click(function() { //arrowfunction funktioniert hier nicht, weil "this" auf den angeklickten Filterbutton zeigen muss
     let placeToJumpTo = this.id.replace("FilterButton", "Category"); //Die ID der Kategorie, die zum angeklickten Filterbutton gehört
-    window.location.href = "#" + placeToJumpTo;
+    let scrollToPos = $("#" + placeToJumpTo).offset().top;
+    window.scrollTo(0, scrollToPos);
     moveHighlight(this.id);
 });
 
@@ -19,7 +20,7 @@ $(window).scroll(() => {
     let closestDistance = null;
     $(".projectCategory").each(function() {
         let tempTopOffset = $(this).offset().top;
-        let currentDistance = Math.abs(tempTopOffset - currentScrollPos); // Abstand der Kategorie zur Seitenoberkante
+        let currentDistance = Math.abs(tempTopOffset - currentScrollPos); // Abstand der Kategorie zur Seitenoberkante mit Scrolloffset
         if(closestDistance == null || closestDistance > currentDistance) { // vergleicht den Abstand zum bisher kürzesten
             // und aktualisiert den bisher kürzesten, falls der aktuellen kürzer ist
             closestDistance = currentDistance;
