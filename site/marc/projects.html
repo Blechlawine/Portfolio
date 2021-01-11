@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo.png">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <!-- personenstylesheet -->
+    <link rel="stylesheet" href="../css/marc.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projekte | Marc Zinser</title>
+</head>
+    <body>
+        <nav>
+            <!-- Wird mit Javascript nachgeladen -->
+        </nav>
+        <div class="filterMenu">
+            <div id="filterHighlight"></div>
+            <div class="filterButton" id="photoFilterButton">
+                <img class="filterButtonImage" src="../img/icons/camera.svg" alt="img desc">
+                <div class="filterButtonTooltip">
+                    <label>Fotografie</label>
+                </div>
+            </div>
+            <div class="filterButton" id="drawFilterButton">
+                <img class="filterButtonImage" src="../img/icons/brush.svg" alt="img desc">
+                <div class="filterButtonTooltip">
+                    <label>Illustrationen</label>
+                </div>
+            </div>
+            <div class="filterButton" id="filmFilterButton">
+                <img class="filterButtonImage" src="../img/icons/theater.svg" alt="img desc">
+                <div class="filterButtonTooltip">
+                    <label>Film</label>
+                </div>
+            </div>
+            <div class="filterButton" id="3dFilterButton">
+                <img class="filterButtonImage" src="../img/icons/cube-outline.svg" alt="img desc">
+                <div class="filterButtonTooltip">
+                    <label>3D Modelling</label>
+                </div>
+            </div>
+            <div class="filterButton" id="codeFilterButton">
+                <img class="filterButtonImage" src="../img/icons/console.svg" alt="img desc">
+                <div class="filterButtonTooltip">
+                    <label>Programmieren</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="projectCategory" id="photoCategory">
+            <p>
+                Fotografie
+            </p>
+            <div class="projectsGrid">
+                <div class="projectBox" onClick="window.location.href = '1-1/project.html'">
+                    <img class="projectImage" src="1-1/thumbnail.jpg" alt="img desc">
+                    <div class="projectName">
+                        <h2>Nachtsafari</h2>
+                    </div>
+                </div>
+                <div class="projectBox" onClick="window.location.href = '1-2/project.html'">
+                    <img class="projectImage" src="1-2/thumbnail.jpg" alt="img desc">
+                    <div class="projectName">
+                        <h2>Unreal World</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var siteName = "Alle Projekte";
+        var projectDude = "Marc Zinser";
+        var partialsPath = "../partials/";
+        var imgPath = "../img/";
+        var aboutMePage = "aboutme.html";
+    </script>
+    <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="../js/client.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/filtermenu.js"></script>
+</body>
+</html>
