@@ -114,7 +114,7 @@
     object-fit:                 cover;
 }
 
-.infoBlock1 {
+.infoBlock {
     display:                    grid;
     margin-left:                10%;
     margin-right:               10%;
@@ -123,18 +123,14 @@
     align-items:                center;
     grid-template-columns:      1fr 1fr;
     grid-template-rows:         1fr 3fr;
+}
+
+.infoBlock1 {
     grid-template-areas:
     "header     header"
     "pic         text";
 }
 .infoBlock2 {
-    display:                    grid;
-    margin-left:                10%;
-    margin-right:               10%;
-    grid-column-gap:            18%;
-    align-items:                center;
-    grid-template-columns:      1fr 1fr;
-    grid-template-rows:         1fr 3fr;
     grid-template-areas:
     "header     header"
     "text         pic";
@@ -149,14 +145,13 @@
 .infoPic {
     position:                   relative;
     grid-area:                  pic;
-    margin-left:                1%;
-    margin-right:               1%;
     overflow-y:                 hidden;
 }
 
 .galleryPic {
     position:                   relative;
     width:                      100%;
+    max-height:                 80vh;
 }
 
 .intoText {
