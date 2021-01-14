@@ -152,6 +152,7 @@
     position:                   relative;
     max-width:                  35vw;
     max-height:                 80vh;
+    overflow-y:                 hidden;
 }
 
 .intoText {
