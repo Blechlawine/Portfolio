@@ -5,14 +5,14 @@ Marc Zinser, 	Matr. Nr. 32738
 
 Funktionsumfang
 https://github.com/Blechlawine/Portfolio		
-Hier sieht man an den Commits wer was genau gemacht hat (Blechlawine = Marc, AILO34 = Alexander, Korpsian = Korbinian)
-Wir haben zusammen mit dem HTML und CSS angefangen und nach der Startseite habe wir uns aufgeteilt mit den Aufgaben.
+Hier sieht man an den Commits wer genau was gemacht hat (Blechlawine = Marc, AILO34 = Alexander, Korpsian = Korbinian)
+Wir haben zusammen mit dem HTML und CSS angefangen und haben uns nach der Startseite aufgeteilt mit den Aufgaben und uns regelmäßig zusammengesetzt, um zusammen den erstellten Code zu überarbeiten
 
 Seitenbeschreibung
 Personenauswahl: Hier kann die Person auswählen, deren Projekte man sehen möchte
 Alle Projekte: Auflistung aller Projekte einer Person
 Projekt-Detailansicht: Genaue Details über das ausgewählte Projekt
-About Me: Über mich
+About Me: Über Mich
 
 Zeitinvestition
 - Großteil des HTML Codes (Korbi) 
